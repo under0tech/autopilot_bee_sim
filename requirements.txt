@@ -1,0 +1,4 @@
+msgpack-rpc-python
+ultralytics
+pymavlink
+airsim
