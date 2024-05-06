@@ -1,0 +1,91 @@
+2024-05-04 18:12:41,774 - BEE-UA913 - INFO - [AUTOPILOT STARTED]
+2024-05-04 18:12:43,798 - BEE-UA913 - INFO - MAVLink connection is established: 'tcp:localhost:5762'
+2024-05-04 18:12:43,999 - BEE-UA913 - DEBUG - Executing command: INIT, Priority: 0, Body: {}
+2024-05-04 18:12:43,999 - BEE-UA913 - INFO - Initializing autopilot
+2024-05-04 18:12:46,775 - BEE-UA913 - INFO - Telemetry: attempting to connect with 'tcp:localhost:5762'
+2024-05-04 18:12:46,776 - BEE-UA913 - INFO - Telemetry: connected with 'tcp:localhost:5762'
+2024-05-04 18:12:46,776 - BEE-UA913 - DEBUG - Executing command: TELEMETRY, Priority: 1, Body: {'target': 'LOCAL_POSITION_NED'}
+2024-05-04 18:12:46,986 - BEE-UA913 - DEBUG - Telemetry: {'mavpackettype': 'LOCAL_POSITION_NED', 'time_boot_ms': 626134, 'x': 0.7729122638702393, 'y': -0.44179800152778625, 'z': -4.010152816772461, 'vx': 0.11364009231328964, 'vy': -0.11292602866888046, 'vz': 0.00784026738256216}
+2024-05-04 18:12:46,986 - BEE-UA913 - INFO - Current altitude [4 m]
+2024-05-04 18:12:46,986 - BEE-UA913 - INFO - Autopilot state: {'connection': True, 'bee_state': 'OFF', 'battery': 0, 'speed': 0, 'altitude': 4, 'ruined': False, 'frame': {}, 'target_lost': 0}
+2024-05-04 18:12:47,986 - BEE-UA913 - DEBUG - Executing command: TELEMETRY, Priority: 2, Body: {'target': 'SERVO_OUTPUT_RAW'}
+2024-05-04 18:12:48,191 - BEE-UA913 - DEBUG - Telemetry: {'mavpackettype': 'SERVO_OUTPUT_RAW', 'time_usec': 627340383, 'port': 0, 'servo1_raw': 1621, 'servo2_raw': 1621, 'servo3_raw': 1621, 'servo4_raw': 1620, 'servo5_raw': 1900, 'servo6_raw': 1100, 'servo7_raw': 0, 'servo8_raw': 0, 'servo9_raw': 0, 'servo10_raw': 0, 'servo11_raw': 0, 'servo12_raw': 0, 'servo13_raw': 0, 'servo14_raw': 0, 'servo15_raw': 0, 'servo16_raw': 0}
+2024-05-04 18:12:48,191 - BEE-UA913 - INFO - Bee state changed to [DESTROY]
+2024-05-04 18:12:48,776 - BEE-UA913 - INFO - Terminator: attempting to connect with 'tcp:localhost:5762'
+2024-05-04 18:12:48,776 - BEE-UA913 - INFO - Terminator: connected with 'tcp:localhost:5762'
+2024-05-04 18:12:48,875 - BEE-UA913 - INFO - Autopilot state: {'connection': True, 'bee_state': 'DESTROY', 'battery': 0, 'speed': 0, 'altitude': 4, 'ruined': False, 'frame': {}, 'target_lost': 0}
+2024-05-04 18:12:50,776 - BEE-UA913 - DEBUG - Executing command: TELEMETRY, Priority: 1, Body: {'target': 'LOCAL_POSITION_NED'}
+2024-05-04 18:12:50,982 - BEE-UA913 - DEBUG - Telemetry: {'mavpackettype': 'LOCAL_POSITION_NED', 'time_boot_ms': 630130, 'x': 0.7897931337356567, 'y': -0.4627233147621155, 'z': -4.009839057922363, 'vx': 0.09322585165500641, 'vy': -0.09525810927152634, 'vz': 0.009447160176932812}
+2024-05-04 18:12:50,982 - BEE-UA913 - INFO - Current altitude [4 m]
+2024-05-04 18:12:50,983 - BEE-UA913 - INFO - Autopilot state: {'connection': True, 'bee_state': 'DESTROY', 'battery': 0, 'speed': 0, 'altitude': 4, 'ruined': False, 'frame': {}, 'target_lost': 0}
+2024-05-04 18:12:51,983 - BEE-UA913 - DEBUG - Executing command: DESTROY, Priority: 1, Body: {}
+2024-05-04 18:12:55,051 - BEE-UA913 - INFO - [FOLLOWING TARGET N:5.3504, E:-0.3093, D:0, Y:-0.0198]
+2024-05-04 18:12:57,909 - BEE-UA913 - DEBUG - Executing command: DESTROY, Priority: 1, Body: {}
+2024-05-04 18:12:58,200 - BEE-UA913 - INFO - [FOLLOWING TARGET N:5.8079, E:-0.2595, D:0, Y:-0.0166]
+2024-05-04 18:13:00,916 - BEE-UA913 - DEBUG - Executing command: TELEMETRY, Priority: 1, Body: {'target': 'LOCAL_POSITION_NED'}
+2024-05-04 18:13:01,124 - BEE-UA913 - DEBUG - Telemetry: {'mavpackettype': 'LOCAL_POSITION_NED', 'time_boot_ms': 640267, 'x': 9.417551040649414, 'y': -0.18860843777656555, 'z': -4.027445316314697, 'vx': 1.877271056175232, 'vy': -0.2934315800666809, 'vz': 0.012046702206134796}
+2024-05-04 18:13:01,125 - BEE-UA913 - INFO - Current speed [2 m/s]
+2024-05-04 18:13:01,125 - BEE-UA913 - INFO - Current altitude [4 m]
+2024-05-04 18:13:01,125 - BEE-UA913 - INFO - Autopilot state: {'connection': True, 'bee_state': 'DESTROY', 'battery': 0, 'speed': 2, 'altitude': 4, 'ruined': False, 'frame': (5.8079, -0.2595, 0, -0.0166), 'target_lost': 0}
+2024-05-04 18:13:02,125 - BEE-UA913 - DEBUG - Executing command: DESTROY, Priority: 1, Body: {}
+2024-05-04 18:13:03,126 - BEE-UA913 - DEBUG - Executing command: DESTROY, Priority: 1, Body: {}
+2024-05-04 18:13:04,126 - BEE-UA913 - DEBUG - Executing command: DESTROY, Priority: 1, Body: {}
+2024-05-04 18:13:05,126 - BEE-UA913 - DEBUG - Executing command: DESTROY, Priority: 1, Body: {}
+2024-05-04 18:13:06,127 - BEE-UA913 - DEBUG - Executing command: TELEMETRY, Priority: 1, Body: {'target': 'LOCAL_POSITION_NED'}
+2024-05-04 18:13:06,334 - BEE-UA913 - DEBUG - Telemetry: {'mavpackettype': 'LOCAL_POSITION_NED', 'time_boot_ms': 645475, 'x': 11.306578636169434, 'y': -0.537567138671875, 'z': -4.0217814445495605, 'vx': 0.05677476525306702, 'vy': -0.05771893262863159, 'vz': 0.007829216308891773}
+2024-05-04 18:13:06,334 - BEE-UA913 - INFO - Current altitude [4 m]
+2024-05-04 18:13:06,335 - BEE-UA913 - INFO - Autopilot state: {'connection': True, 'bee_state': 'DESTROY', 'battery': 0, 'speed': 0, 'altitude': 4, 'ruined': False, 'frame': (5.8079, -0.2595, 0, -0.0166), 'target_lost': 0}
+2024-05-04 18:13:07,335 - BEE-UA913 - DEBUG - Executing command: DESTROY, Priority: 1, Body: {}
+2024-05-04 18:13:07,657 - BEE-UA913 - INFO - [FOLLOWING TARGET N:1.9543, E:-1.0669, D:0, Y:-0.0683]
+2024-05-04 18:13:10,207 - BEE-UA913 - DEBUG - Executing command: TELEMETRY, Priority: 1, Body: {'target': 'LOCAL_POSITION_NED'}
+2024-05-04 18:13:10,415 - BEE-UA913 - DEBUG - Telemetry: {'mavpackettype': 'LOCAL_POSITION_NED', 'time_boot_ms': 649555, 'x': 12.580361366271973, 'y': -1.3457303047180176, 'z': -4.028309345245361, 'vx': 0.707225501537323, 'vy': -0.42133745551109314, 'vz': 0.010248474776744843}
+2024-05-04 18:13:10,415 - BEE-UA913 - INFO - Current altitude [4 m]
+2024-05-04 18:13:10,415 - BEE-UA913 - INFO - Autopilot state: {'connection': True, 'bee_state': 'DESTROY', 'battery': 0, 'speed': 1, 'altitude': 4, 'ruined': False, 'frame': (1.9543, -1.0669, 0, -0.0683), 'target_lost': 0}
+2024-05-04 18:13:11,416 - BEE-UA913 - DEBUG - Executing command: DESTROY, Priority: 1, Body: {}
+2024-05-04 18:13:12,416 - BEE-UA913 - DEBUG - Executing command: DESTROY, Priority: 1, Body: {}
+2024-05-04 18:13:13,416 - BEE-UA913 - DEBUG - Executing command: DESTROY, Priority: 1, Body: {}
+2024-05-04 18:13:14,417 - BEE-UA913 - DEBUG - Executing command: TELEMETRY, Priority: 1, Body: {'target': 'LOCAL_POSITION_NED'}
+2024-05-04 18:13:14,624 - BEE-UA913 - DEBUG - Telemetry: {'mavpackettype': 'LOCAL_POSITION_NED', 'time_boot_ms': 653764, 'x': 13.276058197021484, 'y': -1.6537214517593384, 'z': -4.028309345245361, 'vx': -0.04953392595052719, 'vy': -0.08712746202945709, 'vz': 0.009621049277484417}
+2024-05-04 18:13:14,625 - BEE-UA913 - INFO - Current altitude [4 m]
+2024-05-04 18:13:14,625 - BEE-UA913 - INFO - Autopilot state: {'connection': True, 'bee_state': 'DESTROY', 'battery': 0, 'speed': 0, 'altitude': 4, 'ruined': False, 'frame': (1.9543, -1.0669, 0, -0.0683), 'target_lost': 0}
+2024-05-04 18:13:15,625 - BEE-UA913 - DEBUG - Executing command: TELEMETRY, Priority: 1, Body: {'target': 'LOCAL_POSITION_NED'}
+2024-05-04 18:13:15,833 - BEE-UA913 - DEBUG - Telemetry: {'mavpackettype': 'LOCAL_POSITION_NED', 'time_boot_ms': 654973, 'x': 13.227956771850586, 'y': -1.7047882080078125, 'z': -4.026386737823486, 'vx': 0.023835880681872368, 'vy': -0.05537843704223633, 'vz': 0.003683163085952401}
+2024-05-04 18:13:15,833 - BEE-UA913 - INFO - Current altitude [4 m]
+2024-05-04 18:13:15,833 - BEE-UA913 - INFO - Autopilot state: {'connection': True, 'bee_state': 'DESTROY', 'battery': 0, 'speed': 0, 'altitude': 4, 'ruined': False, 'frame': (1.9543, -1.0669, 0, -0.0683), 'target_lost': 0}
+2024-05-04 18:13:16,834 - BEE-UA913 - DEBUG - Executing command: DESTROY, Priority: 1, Body: {}
+2024-05-04 18:13:17,181 - BEE-UA913 - INFO - [PREPARING FOR ATTACK: target altitude 5m]
+2024-05-04 18:13:20,019 - BEE-UA913 - INFO - [TARGET ATTACKED]
+2024-05-04 18:13:20,629 - BEE-UA913 - INFO - [FALLBACK]
+2024-05-04 18:13:24,627 - BEE-UA913 - INFO - [MISSION COMPLETED]
+2024-05-04 18:13:26,782 - BEE-UA913 - DEBUG - Executing command: TELEMETRY, Priority: 1, Body: {'target': 'LOCAL_POSITION_NED'}
+2024-05-04 18:13:26,987 - BEE-UA913 - DEBUG - Telemetry: {'mavpackettype': 'LOCAL_POSITION_NED', 'time_boot_ms': 666125, 'x': 2.6767001152038574, 'y': -11.769834518432617, 'z': -15.274290084838867, 'vx': 0.13072903454303741, 'vy': -0.2680572271347046, 'vz': -0.13149382174015045}
+2024-05-04 18:13:26,988 - BEE-UA913 - INFO - Current altitude [15 m]
+2024-05-04 18:13:26,988 - BEE-UA913 - INFO - Autopilot state: {'connection': True, 'bee_state': 'DESTROY', 'battery': 0, 'speed': 0, 'altitude': 15, 'ruined': True, 'frame': (1.9543, -1.0669, 0, -0.0683), 'target_lost': 0}
+2024-05-04 18:13:27,988 - BEE-UA913 - DEBUG - Executing command: TELEMETRY, Priority: 2, Body: {'target': 'SERVO_OUTPUT_RAW'}
+2024-05-04 18:13:28,193 - BEE-UA913 - DEBUG - Telemetry: {'mavpackettype': 'SERVO_OUTPUT_RAW', 'time_usec': 667331236, 'port': 0, 'servo1_raw': 1624, 'servo2_raw': 1620, 'servo3_raw': 1663, 'servo4_raw': 1661, 'servo5_raw': 1900, 'servo6_raw': 1100, 'servo7_raw': 0, 'servo8_raw': 0, 'servo9_raw': 0, 'servo10_raw': 0, 'servo11_raw': 0, 'servo12_raw': 0, 'servo13_raw': 0, 'servo14_raw': 0, 'servo15_raw': 0, 'servo16_raw': 0}
+2024-05-04 18:13:28,194 - BEE-UA913 - INFO - Autopilot state: {'connection': True, 'bee_state': 'DESTROY', 'battery': 0, 'speed': 0, 'altitude': 15, 'ruined': True, 'frame': (1.9543, -1.0669, 0, -0.0683), 'target_lost': 0}
+2024-05-04 18:13:29,194 - BEE-UA913 - DEBUG - Executing command: MONITOR, Priority: 3, Body: {'target': 'SYS_STATUS'}
+2024-05-04 18:13:29,399 - BEE-UA913 - DEBUG - Monitoring: {'mavpackettype': 'SYS_STATUS', 'onboard_control_sensors_present': 1399979055, 'onboard_control_sensors_enabled': 1398930479, 'onboard_control_sensors_health': 1467087887, 'load': 1000, 'voltage_battery': 12600, 'current_battery': 0, 'battery_remaining': 100, 'drop_rate_comm': 0, 'errors_comm': 0, 'errors_count1': 0, 'errors_count2': 0, 'errors_count3': 0, 'errors_count4': 0}
+2024-05-04 18:13:30,782 - BEE-UA913 - DEBUG - Executing command: TELEMETRY, Priority: 1, Body: {'target': 'LOCAL_POSITION_NED'}
+2024-05-04 18:13:30,992 - BEE-UA913 - DEBUG - Telemetry: {'mavpackettype': 'LOCAL_POSITION_NED', 'time_boot_ms': 670127, 'x': 2.9811854362487793, 'y': -11.447978973388672, 'z': -15.033207893371582, 'vx': 0.01695646531879902, 'vy': -0.2317221760749817, 'vz': -0.0049653914757072926}
+2024-05-04 18:13:30,992 - BEE-UA913 - INFO - Current altitude [15 m]
+2024-05-04 18:13:30,992 - BEE-UA913 - INFO - Autopilot state: {'connection': True, 'bee_state': 'DESTROY', 'battery': 100, 'speed': 0, 'altitude': 15, 'ruined': True, 'frame': (1.9543, -1.0669, 0, -0.0683), 'target_lost': 0}
+2024-05-04 18:13:31,992 - BEE-UA913 - DEBUG - Executing command: TELEMETRY, Priority: 2, Body: {'target': 'SERVO_OUTPUT_RAW'}
+2024-05-04 18:13:32,199 - BEE-UA913 - DEBUG - Telemetry: {'mavpackettype': 'SERVO_OUTPUT_RAW', 'time_usec': 671336321, 'port': 0, 'servo1_raw': 1623, 'servo2_raw': 1621, 'servo3_raw': 1626, 'servo4_raw': 1626, 'servo5_raw': 1900, 'servo6_raw': 1100, 'servo7_raw': 0, 'servo8_raw': 0, 'servo9_raw': 0, 'servo10_raw': 0, 'servo11_raw': 0, 'servo12_raw': 0, 'servo13_raw': 0, 'servo14_raw': 0, 'servo15_raw': 0, 'servo16_raw': 0}
+2024-05-04 18:13:32,199 - BEE-UA913 - INFO - Autopilot state: {'connection': True, 'bee_state': 'DESTROY', 'battery': 100, 'speed': 0, 'altitude': 15, 'ruined': True, 'frame': (1.9543, -1.0669, 0, -0.0683), 'target_lost': 0}
+2024-05-04 18:13:33,200 - BEE-UA913 - DEBUG - Executing command: MONITOR, Priority: 3, Body: {'target': 'SYS_STATUS'}
+2024-05-04 18:13:33,406 - BEE-UA913 - DEBUG - Monitoring: {'mavpackettype': 'SYS_STATUS', 'onboard_control_sensors_present': 1399979055, 'onboard_control_sensors_enabled': 1398930479, 'onboard_control_sensors_health': 1467087887, 'load': 1000, 'voltage_battery': 12600, 'current_battery': 0, 'battery_remaining': 100, 'drop_rate_comm': 0, 'errors_comm': 0, 'errors_count1': 0, 'errors_count2': 0, 'errors_count3': 0, 'errors_count4': 0}
+2024-05-04 18:13:34,782 - BEE-UA913 - DEBUG - Executing command: TELEMETRY, Priority: 1, Body: {'target': 'LOCAL_POSITION_NED'}
+2024-05-04 18:13:34,988 - BEE-UA913 - DEBUG - Telemetry: {'mavpackettype': 'LOCAL_POSITION_NED', 'time_boot_ms': 674123, 'x': 3.0695154666900635, 'y': -11.608903884887695, 'z': -14.990013122558594, 'vx': 0.05770711973309517, 'vy': 0.027482112869620323, 'vz': -0.023296628147363663}
+2024-05-04 18:13:34,988 - BEE-UA913 - INFO - Current altitude [15 m]
+2024-05-04 18:13:34,988 - BEE-UA913 - INFO - Autopilot state: {'connection': True, 'bee_state': 'DESTROY', 'battery': 100, 'speed': 0, 'altitude': 15, 'ruined': True, 'frame': (1.9543, -1.0669, 0, -0.0683), 'target_lost': 0}
+2024-05-04 18:13:35,989 - BEE-UA913 - DEBUG - Executing command: TELEMETRY, Priority: 2, Body: {'target': 'SERVO_OUTPUT_RAW'}
+2024-05-04 18:13:36,194 - BEE-UA913 - DEBUG - Telemetry: {'mavpackettype': 'SERVO_OUTPUT_RAW', 'time_usec': 675329406, 'port': 0, 'servo1_raw': 1622, 'servo2_raw': 1622, 'servo3_raw': 1623, 'servo4_raw': 1622, 'servo5_raw': 1900, 'servo6_raw': 1100, 'servo7_raw': 0, 'servo8_raw': 0, 'servo9_raw': 0, 'servo10_raw': 0, 'servo11_raw': 0, 'servo12_raw': 0, 'servo13_raw': 0, 'servo14_raw': 0, 'servo15_raw': 0, 'servo16_raw': 0}
+2024-05-04 18:13:36,194 - BEE-UA913 - INFO - Autopilot state: {'connection': True, 'bee_state': 'DESTROY', 'battery': 100, 'speed': 0, 'altitude': 15, 'ruined': True, 'frame': (1.9543, -1.0669, 0, -0.0683), 'target_lost': 0}
+2024-05-04 18:13:37,194 - BEE-UA913 - DEBUG - Executing command: MONITOR, Priority: 3, Body: {'target': 'SYS_STATUS'}
+2024-05-04 18:13:37,310 - BEE-UA913 - INFO - [STOPPING THREADS]
+2024-05-04 18:13:37,400 - BEE-UA913 - DEBUG - Monitoring: {'mavpackettype': 'SYS_STATUS', 'onboard_control_sensors_present': 1399979055, 'onboard_control_sensors_enabled': 1398930479, 'onboard_control_sensors_health': 1467087919, 'load': 1000, 'voltage_battery': 12600, 'current_battery': 0, 'battery_remaining': 100, 'drop_rate_comm': 0, 'errors_comm': 0, 'errors_count1': 0, 'errors_count2': 0, 'errors_count3': 0, 'errors_count4': 0}
+2024-05-04 18:13:38,400 - BEE-UA913 - INFO - thread 'Command executor', DONE.
+2024-05-04 18:13:38,783 - BEE-UA913 - INFO - thread 'Telemetry requestor', DONE.
+2024-05-04 18:13:38,784 - BEE-UA913 - INFO - thread 'Terminator process', DONE.
+2024-05-04 18:13:38,784 - BEE-UA913 - INFO - [AUTOPILOT FINISHED]
