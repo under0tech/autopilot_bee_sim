@@ -1,4 +1,4 @@
-# Autopilot with Target Following for FPV Combat Drone (Simulator version BEE_SIM_00_01)
+# Autopilot with Target Following for FPV Combat Drone (Simulator version)
 
 ## Autopilot "BEE"
 Autopilot "BEE", installed on the companion computer on the FPV Combat Drone, has the ability to locate and track targets autonomously. It can approach targets, prepare for an attack, execute the attack (releasing the bomb), and safely fallback to complete the mission — all without requiring operator involvement. The system operates in automatic mode. It can also detect anti-drone systems and switch into KILL mode to neutralize threat.
