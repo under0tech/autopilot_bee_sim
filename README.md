@@ -42,14 +42,14 @@ Before starting the Autopilot, ensure the copter is properly configured using `M
    ![image](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/5a2ba9e4-30d3-4da1-b8fe-f856ccc2aa82)
 3. In the `Actions` tab, ARM the motors.
    
-   ![image](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/b3d4dd8d-4cf5-4fec-a571-c44a43caf103)
+   ![image](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/866ac070-41cc-463a-ae6f-8b9fd1595350)
 5. Perform a takeoff with an altitude of 4m.
    
    ![image](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/81bf43a9-963e-4319-b7bb-4ffb0da1a235)
 7. In the `Servo\Relay` tab, set `Low` for `servo 5`. This indicates that the Autopilot is in the `OFF` mode.
 8. In the `Servo\Relay` tab, set `High` for `servo 6`. This indicates that the bomb is armed and onboard.
    
-   ![image](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/be43d232-9b9d-416c-9cde-70e032eff1ed)
+   ![image](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/6d582501-4db7-4691-aed7-3df5b7b22388)
 
 Go to the `AirSim game` and ensure that the copter is at an altitude of 4m. Press `Ctrl+3` to show the front camera view (which uses in the target following process).
 
