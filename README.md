@@ -39,7 +39,7 @@ If all three programs have started successfully, you'll be able to view the copt
 Before starting the Autopilot, ensure the copter is properly configured using `Mission Planner`.
 1. Navigate to the `Actions` tab and switch the copter to `Guided` mode.
    
-   ![image](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/ec2b4476-35bf-419d-b463-8e1526cbc84c)
+   ![image](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/5a2ba9e4-30d3-4da1-b8fe-f856ccc2aa82)
 3. In the `Actions` tab, ARM the motors.
    
    ![image](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/b3d4dd8d-4cf5-4fec-a571-c44a43caf103)
