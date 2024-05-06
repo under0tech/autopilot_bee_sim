@@ -38,13 +38,17 @@ If all three programs have started successfully, you'll be able to view the copt
 ## Be ready for Autopilot run
 Before starting the Autopilot, ensure the copter is properly configured using `Mission Planner`.
 1. Navigate to the `Actions` tab and switch the copter to `Guided` mode.
+   
    ![Screenshot from 2024-05-06 11-46-28](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/ec2b4476-35bf-419d-b463-8e1526cbc84c)
 3. In the `Actions` tab, ARM the motors.
+   
    ![Screenshot from 2024-05-06 11-47-01](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/b3d4dd8d-4cf5-4fec-a571-c44a43caf103)
 5. Perform a takeoff with an altitude of 4m.
+   
    ![Screenshot from 2024-05-06 11-48-05](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/81bf43a9-963e-4319-b7bb-4ffb0da1a235)
 7. In the `Servo\Relay` tab, set `Low` for `servo 5`. This indicates that the Autopilot is in the `OFF` mode.
 8. In the `Servo\Relay` tab, set `High` for `servo 6`. This indicates that the bomb is armed and onboard.
+   
    ![Screenshot from 2024-05-06 11-48-56](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/be43d232-9b9d-416c-9cde-70e032eff1ed)
 
 Go to the `AirSim game` and ensure that the copter is at an altitude of 4m. Press `Ctrl+3` to show the front camera view (which uses in the target following process).
