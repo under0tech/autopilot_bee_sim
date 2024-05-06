@@ -77,5 +77,5 @@ If you are a developer or possess developer skills, feel free to utilize this co
 Be patient while setting up the environment and familiarizing yourself with each component. There are plenty of pitfalls that may demand your attention and time to resolve. This is normal. It took me a few weeks to set up and run the environment.
 
 ## Get in touch
-Message me on Twitter if you have any questions.
+Text me on Twitter if you have any questions.
 https://twitter.com/dmytro_sazonov
