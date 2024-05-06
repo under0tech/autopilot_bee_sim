@@ -39,21 +39,21 @@ If all three programs have started successfully, you'll be able to view the copt
 Before starting the Autopilot, ensure the copter is properly configured using `Mission Planner`.
 1. Navigate to the `Actions` tab and switch the copter to `Guided` mode.
    
-   ![Screenshot from 2024-05-06 11-46-28](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/ec2b4476-35bf-419d-b463-8e1526cbc84c)
+   ![image](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/ec2b4476-35bf-419d-b463-8e1526cbc84c)
 3. In the `Actions` tab, ARM the motors.
    
-   ![Screenshot from 2024-05-06 11-47-01](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/b3d4dd8d-4cf5-4fec-a571-c44a43caf103)
+   ![image](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/b3d4dd8d-4cf5-4fec-a571-c44a43caf103)
 5. Perform a takeoff with an altitude of 4m.
    
-   ![Screenshot from 2024-05-06 11-48-05](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/81bf43a9-963e-4319-b7bb-4ffb0da1a235)
+   ![image](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/81bf43a9-963e-4319-b7bb-4ffb0da1a235)
 7. In the `Servo\Relay` tab, set `Low` for `servo 5`. This indicates that the Autopilot is in the `OFF` mode.
 8. In the `Servo\Relay` tab, set `High` for `servo 6`. This indicates that the bomb is armed and onboard.
    
-   ![Screenshot from 2024-05-06 11-48-56](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/be43d232-9b9d-416c-9cde-70e032eff1ed)
+   ![image](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/be43d232-9b9d-416c-9cde-70e032eff1ed)
 
 Go to the `AirSim game` and ensure that the copter is at an altitude of 4m. Press `Ctrl+3` to show the front camera view (which uses in the target following process).
 
-![Screenshot from 2024-05-06 11-49-16](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/04d3a434-f111-4972-864e-43c8b763eb5d)
+![image](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/04d3a434-f111-4972-864e-43c8b763eb5d)
 
 ## How to Use
 1. Install the required dependencies using `requirements.txt`.
@@ -66,7 +66,12 @@ python3 main.py
 ```
 Afterward, monitor the Autopilot's activity in your `Terminal` and logs. At its start, the autopilot is in `OFF` mode, meaning it won't locate or follow the target. To activate this function, switch `servo 5` to `High`, indicating a transition to `DESTROY` mode. Now, go to the `AirSim game` and observe the Autopilot in action.
 
-![Screenshot from 2024-05-06 11-55-12](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/6818e8d3-b7ea-40a1-bfdd-37df8ec793d0)
+![image](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/6818e8d3-b7ea-40a1-bfdd-37df8ec793d0)
+
+## Customize this Autopilot
+The primary objective of sharing this source code is to initiate discussions within the developer community in Ukraine about automated combat drones. This initiative aims to establish a strategic advantage on the battlefield by implementing automated flight systems equipped with computer vision on homeborn FPV drones to bolster support for the Ukrainian army.
+
+If you are a developer or possess developer skills, feel free to utilize this code to develop your own Autopilots integrated with Computer Vision capabilities. For more detailed instructions, please refer to [README_DEV.md](README_DEV.md). Share your creations with those involved in the production and supply of FPV drones for the Ukrainian military and #SupportUkraine in such way.
 
 ## Troubleshooting
 Be patient while setting up the environment and familiarizing yourself with each component. There are plenty of pitfalls that may demand your attention and time to resolve. This is normal. It took me a few weeks to set up and run the environment.
