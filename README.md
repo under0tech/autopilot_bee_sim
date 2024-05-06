@@ -52,6 +52,7 @@ Before starting the Autopilot, ensure the copter is properly configured using `M
    ![Screenshot from 2024-05-06 11-48-56](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/be43d232-9b9d-416c-9cde-70e032eff1ed)
 
 Go to the `AirSim game` and ensure that the copter is at an altitude of 4m. Press `Ctrl+3` to show the front camera view (which uses in the target following process).
+
 ![Screenshot from 2024-05-06 11-49-16](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/04d3a434-f111-4972-864e-43c8b763eb5d)
 
 ## How to Use
@@ -64,6 +65,7 @@ pip install -r requirements.txt
 python3 main.py
 ```
 Afterward, monitor the Autopilot's activity in your `Terminal` and logs. At its start, the autopilot is in `OFF` mode, meaning it won't locate or follow the target. To activate this function, switch `servo 5` to `High`, indicating a transition to `DESTROY` mode. Now, go to the `AirSim game` and observe the Autopilot in action.
+
 ![Screenshot from 2024-05-06 11-55-12](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/6818e8d3-b7ea-40a1-bfdd-37df8ec793d0)
 
 ## Troubleshooting
