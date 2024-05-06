@@ -4,13 +4,13 @@
 Autopilot "BEE", installed on the companion computer on the FPV Combat Drone, has the ability to locate and track targets autonomously. It can approach targets, prepare for an attack, execute the attack (releasing the bomb), and safely fallback to complete the mission — all without requiring operator involvement. The system operates in automatic mode. It can also detect anti-drone systems and switch into KILL mode to neutralize threat.
 
 ### MODES:
-`OFF` -  autopilot is waiting from roperator to be switched onto any of the modes. No one module work besides listening to telemetry and logging.
+`OFF`  -  autopilot is inactive, awaiting operator input to switch to any of the modes. Only telemetry monitoring and logging are active.
 
-`READY` -  besides all modules listed in the previous mode also included Anti-Drone system work recognition with further switching to mode `KILL`.
+`READY`  -  in addition to the functionalities of the previous mode, the Anti-Drone system is activated for threat recognition, with the option to switch to the `KILL` mode.
 
-`KILL` -  switched into this mode automatically because of anti-drone system is detected. Task the same as for 'DESTROY'.
+`KILL`  -  automatically activated when the Anti-Drone system detects a threat. Tasks align with those of the `DESTROY` mode.
 
-`DESTROY` -  find a target and destroy that. In this mode autopilot switch on camera and look for targets and in case the target is detected it capture the target and follow for destroying.
+`DESTROY`  -  locate and neutralize a target. Autopilot activates the camera, scans for targets, captures them upon detection, and proceeds with destruction.
 
 ## Simulator
 Simulator version is designed to develop and debug computer vision with target following and entire Autopilot work using `Microsoft AirSim`, `ArduCopter SITL` and `Mission Planner` running on Linux.
