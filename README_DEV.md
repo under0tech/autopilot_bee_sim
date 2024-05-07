@@ -76,7 +76,7 @@ The file also contains predefined scenarios for target following, target search,
 Almost every command is associated with its specific delay period, indicating that the system router must wait until the command is executed. These delays are defined within the `command_delays` object.
 
 ## Router
-As it described in `Architecture` section, router (`Command executor`) is the central part of the application and manipulate of all commands been added to the command queue. To this moment it knows the following list of commands:
+As it described in `Architecture` section, [router](router.py) (`Command executor`) is the central part of the application and manipulate of all commands been added to the command queue. To this moment it knows the following list of commands:
 ```python
 commands = {
     'INIT': command_init,
