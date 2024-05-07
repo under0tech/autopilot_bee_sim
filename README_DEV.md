@@ -67,7 +67,11 @@ The `Autopilot settings`, as listed below, is utilized for Autopilot operations 
 The application contains predefined messages for various situations and a list of targets to be notified accordingly. Messages can be sent to Ground Control (or FPV Goggles), AirSim console, application console, log, or all of them simultaneously. The logic for managing this functionality is implemented in [messages.py](messages.py). Additionally, [logger.py](logger.py) is utilized to log messages into a log file, which can be valuable for tracking the target path and investigating autopilot flight.
 
 ## MAVLink commands
-...
+Communication between the companion computer (autopilot) and the FPV Combat Drone is facilitated through MAVLink commands, which are listed in the file [commands.py](commands.py). These commands are responsible for various functions, including notifications to Ground Control, drone landing, telemetry requests, system monitoring, as well as commands for controlling the drone's altitude, direction, and movement. 
+
+The file also contains predefined scenarios for target following, target search, preparation for attack, attack, fallback, and drone initialization. It encompasses all aspects of communication between the autopilot and FPV Drone.
+
+Every command is associated with its specific delay period, indicating that the system (router) must wait until the command is executed. These delays are defined within the `command_delays` object.
 
 ## Router
 ...
