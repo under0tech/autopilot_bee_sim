@@ -89,7 +89,7 @@ commands = {
 
 - **INIT**: Initialize the FPV Drone by requesting all streams.
 - **MONITOR**: Retrieves system status from the FPV Drone, including battery voltage and capacity.
-- **TELEMETRY**: Fetches current speed and altitude, as well as `servo/relay` outputs essential for Autopilot control.
+- **TELEMETRY**: Fetches current speed and altitude, as well as `servo/relay` outputs.
 - **DESTROY**: Initiates target following and scenario for target destruction.
 - **LAND**: Commands FPV Drone to land in case of low battery voltage.
 
