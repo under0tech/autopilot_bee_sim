@@ -96,8 +96,13 @@ commands = {
 Within each command method, there is embedded logic, messages sent to designated targets, and the execution of MAVLink commands.
 
 ## Computer vision
-...
-[How to prepare your own dataset and model for computer vision](https://medium.com/@dmytrosazonov/diy-for-a-spy-utilizing-yolov8-object-detection-in-military-operations-053d787b6f62)
+Computer vision serves as the cornerstone of the target tracking process, playing a crucial role in Autopilot functionality. It acts as the eyes of Autopilot. The system's ability to recognize objects allows Autopilot to detect and track targets until their destruction.
+
+The Autopilot "BEE" utilizes [YOLOv8 from Ultralytics](https://www.ultralytics.com) object detection models. For task of object detection in this `Simulator version` we use [yolov8n.pt](pt/yolov8n.pt) model and `2 - Car` object detection class.
+
+In the context of developing object detection capabilities for a real-world FPV Combat drone, you may need to prepare and compile another aerial model capable of recognizing soldiers, tanks, military trucks, and other relevant objects. For further instructions on how to build your own Computer Vision model, refer to [this article](https://medium.com/@dmytrosazonov/diy-for-a-spy-utilizing-yolov8-object-detection-in-military-operations-053d787b6f62).
+
+Object detection and target tracking face a complex challenge. It may involve converting the target's position on the picture to Cartesian coordinates (NED), adjusting altitude as needed, and considering scale and conversion factors. These tasks are all implemented within the `Computer Vision` module, located in [vision.py](vision.py).
 
 ## How to migrate to genuine FPV Combat Drone?
 ...
