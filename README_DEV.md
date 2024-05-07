@@ -100,12 +100,24 @@ Computer vision serves as the cornerstone of the target tracking process, playin
 
 The Autopilot "BEE" utilizes [YOLOv8 from Ultralytics](https://www.ultralytics.com) object detection models. For task of object detection in this `Simulator version` we use [yolov8n.pt](pt/yolov8n.pt) model and `2 - Car` object detection class.
 
-In the context of developing object detection capabilities for a real-world FPV Combat drone, you may need to prepare and compile another aerial model capable of recognizing soldiers, tanks, military trucks, and other relevant objects. For further instructions on how to build your own Computer Vision model, refer to [this article](https://medium.com/@dmytrosazonov/diy-for-a-spy-utilizing-yolov8-object-detection-in-military-operations-053d787b6f62).
+In the context of developing object detection capabilities for a **real-world FPV Combat drone**, you may need to prepare and compile another aerial model capable of recognizing soldiers, tanks, military trucks, and other relevant objects. For further instructions on how to build your own Computer Vision model, refer to [this article](https://medium.com/@dmytrosazonov/diy-for-a-spy-utilizing-yolov8-object-detection-in-military-operations-053d787b6f62).
 
 Object detection and target tracking face a complex challenge. It may involve converting the target's position on the picture to Cartesian coordinates (NED), adjusting altitude as needed, and considering scale and conversion factors. These tasks are all implemented within the `Computer Vision` module, located in [vision.py](vision.py).
 
-## How to migrate to genuine FPV Combat Drone?
-...
+## How to migrate to real-world FPV Combat Drone?
+This `Simulator version` is designed for development and debugging of Autopilot based on Computer vision and object detection in **Microsoft AirSim**. However, the main reason to do that is in migrating debugged models to the real world after that. So, how can you achieve that?
+
+- Establish a connection between the Flight Controller and companion computer.
+- Explore methods for recognizing commands from the `FPV Radio Controller`, facilitating mode toggling.
+- Investigate mechanisms for releasing the bomb using `servo/relay` mechanism.
+- Investigate how `Anti-drone system` impact the telemetry from FPV Drone to be able recognize that event.
+- Investigate notification mechnisms of `FPV Goggles` to be able send messages to operator of FPV Drone.
+- Investigate communication with the `video camera`, either that one connected to the Companion computer or using MAVLink protocol to that one installed on the FPV Drone.
+- Create a `customized aerial dataset` and build an object recognition model specialized in identifying soldiers, tanks, military trucks, etc.
+- Experiment with your computer vision model on `Raspberry Pi` or another chosen companion computer. Evaluate its speed; consider utilizing the `Coral Edge TPU` for acceleration if necessary.
+- Assemble your FPV drone, include the companion computer and all the necessary components.
+- Conduct debugging at the `FPV polygon` in your area before sending your product to the Ukrainian frontline.
+- Once the initial version of your product is prepared, switch the logger to `DEBUG` mode to capture flight data comprehensively. Send the product to the Ukrainian military for testing in combat operations. Request from them `flight logs` back for further analysis and product evaluation.
 
 ## Get in touch
 Message me on Twitter if you have some questions.
