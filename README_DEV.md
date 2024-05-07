@@ -66,6 +66,8 @@ The `Autopilot settings`, as listed below, is utilized for Autopilot operations 
 ## Messages and logger
 The application contains predefined messages for various situations and a list of targets to be notified accordingly. Messages can be sent to Ground Control (or FPV Goggles), AirSim console, application console, log, or all of them simultaneously. The logic for managing this functionality is implemented in [messages.py](messages.py). Additionally, [logger.py](logger.py) is utilized to log messages into a log file, which can be valuable for tracking the target path and investigating autopilot flight.
 
+Logs (**LOG files**) and the following path are stored in the folder named `Logs`. The following path contains all images (**PNG files**) used for object detection and the following process during its target tracking and destruction.
+
 ## MAVLink commands
 Communication between the companion computer (autopilot) and the FPV Combat Drone is facilitated through `MAVLink commands`, which are listed in the [commands.py](commands.py) file. These commands are responsible for various functions, including notifications to Ground Control, drone landing, telemetry requests, system monitoring, as well as commands for controlling the drone's altitude, direction, and movement. 
 
@@ -74,7 +76,24 @@ The file also contains predefined scenarios for target following, target search,
 Almost every command is associated with its specific delay period, indicating that the system router must wait until the command is executed. These delays are defined within the `command_delays` object.
 
 ## Router
-...
+As it described in `Architecture` section, router (`Command executor`) is the central part of the application and manipulate of all commands been added to the command queue. To this moment it knows the following list of commands:
+```python
+commands = {
+    'INIT': command_init,
+    'MONITOR': command_monitor,
+    'TELEMETRY': command_telemetry,
+    'DESTROY':command_kill,
+    'LAND': command_land,
+}
+```
+
+- **INIT**: Initialize the FPV Drone by requesting all streams.
+- **MONITOR**: Retrieves system status from the FPV Drone, including battery voltage and capacity.
+- **TELEMETRY**: Fetches current speed and altitude, as well as `servo/relay` outputs essential for Autopilot control.
+- **DESTROY**: Initiates target following and scenario for target destruction.
+- **LAND**: Commands FPV Drone to land in case of low battery voltage.
+
+Within each command method, there is embedded logic, messages sent to designated targets, and the execution of MAVLink commands.
 
 ## Computer vision
 ...
