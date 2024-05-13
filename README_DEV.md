@@ -28,15 +28,15 @@ state = {
     'target_lost': 0,
 }
 ```
-The `Autopilot state`, as listed below, is utilized for Autopilot operations and encompasses vital parameters that can be changed during program execution.
+The `Autopilot state`, as listed above, is utilized for Autopilot operations and encompasses vital parameters that can be changed during program execution.
 
 - **`connection`**: Upon establishment of a connection with the FPV Drone, this parameter remains `False`.
 - **`bee_state`**: Can be set to one of the following modes: `OFF`, `READY`, `KILL`, `DESTROY`, as detailed in the introduction section of [README.md](README.md).
-- **`battery`**: Indicates the current battery capacity in percentages. If the capacity drops below 20%, the Autopilot begins notifying the pilot with the message `low battery voltage`. When the percentage falls below 3%, it enforces the landing of the FPV Drone.
+- **`battery`**: Indicates the current battery capacity in percentage. If the capacity drops below 20%, the Autopilot begins notifying the pilot with the message `low battery voltage`. When the percentage falls below 3%, it enforces the landing of the FPV Drone.
 - **`speed`** and **`altitude`**: Reflect the current speed and altitude, respectively.
-- **`ruined`**: Initially set as `False`, this parameter remains so until the bomb is installed on the drone.
+- **`ruined`**: Initially set as `False`, this parameter remains until the bomb is not realised.
 - **`frame`**: Initially equal to `{}`, this parameter remains unchanged until the first target is recognized for tracking.
-- **`target_lost`**: During the tracking process, if the target is lost, this parameter counts the number of times the target is lost. It uses in the additional logic related to controlling altitude in case of target loss.
+- **`target_lost`**: During the tracking process, if the target lost, this parameter counts the number of times the target lost. It uses in the additional logic related to controlling altitude in case of target loss.
 
 ```python
 mavlink_url = 'tcp:localhost:5762'
@@ -51,7 +51,7 @@ following_altitude = 4
 target_lost_limit = 3
 ```
 
-The `Autopilot settings`, as listed below, is utilized for Autopilot operations and encompasses settings for video camera, mavlink connection and so on.
+The `Autopilot settings`, as listed above, is utilized for Autopilot operations and encompasses settings for video camera, mavlink connection and so on.
 
 - **`mavlink_url`**: Specifies the URL for connecting to the MAVLink interface, typically in the format `'tcp:localhost:5762'`.
 - **`logger_name`**: Defines the name of the logger associated with the Autopilot, such as `'BEE-UA913'`.
@@ -87,7 +87,7 @@ commands = {
 }
 ```
 
-- **INIT**: Initialize the FPV Drone by requesting all streams.
+- **INIT**: Initializes the FPV Drone by requesting all streams.
 - **MONITOR**: Retrieves system status from the FPV Drone, including battery voltage and capacity.
 - **TELEMETRY**: Fetches current speed and altitude, as well as `servo/relay` outputs.
 - **DESTROY**: Initiates target following and scenario for target destruction.
@@ -102,7 +102,7 @@ The Autopilot "BEE" utilizes [YOLOv8 from Ultralytics](https://www.ultralytics.c
 
 In the context of developing object detection capabilities for a **real-world FPV Combat drone**, you may need to prepare and compile another aerial model capable of recognizing soldiers, tanks, military trucks, and other relevant objects. For further instructions on how to build your own Computer Vision model, refer to [this article](https://medium.com/@dmytrosazonov/diy-for-a-spy-utilizing-yolov8-object-detection-in-military-operations-053d787b6f62).
 
-Object detection and target tracking face a complex challenge. It may involve converting the target's position on the picture to Cartesian coordinates (NED), adjusting altitude as needed, and considering scale and conversion factors. These tasks are all implemented within the `Computer Vision` module, located in [vision.py](vision.py).
+Object detection and target tracking face a complex challenge. It may involve converting the target's position on the image frame to Cartesian coordinates (NED), adjusting altitude as needed, and considering scale and conversion factors. These tasks are fully implemented within the `Computer Vision` module, located in [vision.py](vision.py).
 
 ## How to migrate to real-world FPV Combat Drone?
 This `Simulator version` is designed for development and debugging of Autopilot based on Computer vision and object detection in **Microsoft AirSim**. However, the main reason to do that is in migrating debugged models to the real world after that. So, how can you achieve that?
