@@ -1,22 +1,22 @@
 # Autopilot with Target Following for FPV Combat Drone (Simulator version)
 
 ## Autopilot "BEE"
-Autopilot "BEE", installed on the companion computer on the FPV Combat Drone, has the ability to locate and track targets autonomously. It can approach targets, prepare for an attack, execute the attack (releasing the bomb), and safely fallback to complete the mission — all without requiring operator involvement. The system operates in automatic mode. It can also detect anti-drone systems and switch into KILL mode to neutralize threat.
+Autopilot "BEE", installed on the companion computer on the FPV Combat Drone, has the ability to locate and track targets autonomously. It can approach targets, prepare for an attack, execute the attack (releasing the bomb), and safely fallback to complete the mission — all without operator involvement. The system operates in automatic mode. It can also detect anti-drone systems and switch into KILL mode to neutralize threat.
 
 ### MODES:
 `OFF`  -  autopilot is inactive, awaiting operator input to switch to any of the modes. Only telemetry monitoring and logging are active.
 
-`READY`  -  in addition to the functionalities of the previous mode, the Anti-Drone system is activated for threat recognition, with the option to switch to the `KILL` mode.
+`READY`  -  in addition to the functionalities of the previous mode, the Anti-Drone system recognition is activated, with the option to switch to the `KILL` mode.
 
-`KILL`  -  automatically activated when the Anti-Drone system detects a threat. Tasks align with those of the `DESTROY` mode.
+`KILL`  -  automatically activates when the Anti-Drone system detects a threat. Tasks align with the `DESTROY` mode.
 
-`DESTROY`  -  locate and neutralize a target. Autopilot activates the camera, scans for targets, captures them upon detection, and proceeds with destruction.
+`DESTROY`  -  locates and neutralizes a target. Autopilot activates the camera, scans for targets, captures them upon detection, and proceeds with destruction.
 
 ## Simulator
 Simulator version is designed to develop and debug computer vision with target following and entire Autopilot work using `Microsoft AirSim`, `ArduCopter SITL` and `Mission Planner` running on Linux.
 
 ## Environment
-For the development and debugging process, a robust computer is necessary due to the requirements for `Microsoft AirSim`. During the Autopilot development I used an `Ubuntu 23.10 - based computer` equipped with a `16-Core processor` and `16GB RAM`.
+For the development and debugging process, a robust computer is necessary due to the requirements for `Microsoft AirSim`. During the Autopilot development I used an `Ubuntu 23.10 - based computer` equipped with a `16-Core processor` and `16 GB RAM`.
 
 Set up the environment:
 1. [Microsoft AirSim](https://github.com/Microsoft/AirSim/releases)
@@ -51,7 +51,7 @@ Before starting the Autopilot, ensure the copter is properly configured using `M
    
    ![image](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/6d582501-4db7-4691-aed7-3df5b7b22388)
 
-Go to the `AirSim game` and ensure that the copter is at an altitude of 4m. Press `Ctrl+3` to show the front camera view (which uses in the target following process).
+Go to the `AirSim game` and ensure that the copter is at an altitude of 4m. Press `Ctrl+3` to show the front camera view (which Autopilot uses in the target following process).
 
 ![image](https://github.com/under0tech/autopilot_bee_sim/assets/113665703/04d3a434-f111-4972-864e-43c8b763eb5d)
 
