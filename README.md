@@ -33,7 +33,7 @@ Run the environment:
 cd ~/Apps/AirSim
 python3 run.py
 ```
-If all three programs have started successfully, you'll be able to view the copter in the `AirSim Simulator` and control its motor arming/disarming using `Mission Planner`. This indicates that the installation was successful, and you can proceed.
+If all three programs have started successfully, you'll be able to see the copter in the `AirSim Simulator` and control its motors arming/disarming using `Mission Planner`. This indicates that the installation was successful, and you can proceed.
 
 ## Be ready for Autopilot run
 Before starting the Autopilot, ensure the copter is properly configured using `Mission Planner`.
